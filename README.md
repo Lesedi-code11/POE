@@ -5,7 +5,6 @@ Lesedi Molatlhoe
 ST10493726
 Web Development (Introduction)
 WEDE5020 
-13 August 2026
 
 Project Overview
 This website serves as the official online presence for Soweto City Electrical Wholesalers, a premier provider of electrical supplies, solar solutions and component manufacturing services based in Soweto, Gauteng. The website aims to establish a professional digital footprint for the organisation, showcase its product catalogue and enable customer enquiries for products and services.
