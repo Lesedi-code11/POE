@@ -28,5 +28,5 @@ Responsive Design – Optimised for desktop, tablet and mobile devices.
 Product and Service Information – Detailed pages for electrical supplies, solar solutions, component manufacturing and repairs.
 Enquiry Form – Allows customers to submit product, bulk order and service enquiries with client-side validation.
 Contact Information – Branch addresses, phone numbers and email contacts.
-Interactive Navigation – Hamburger menu for mobile devices.
+Interactive Navigation – Making it easy to explore the website.
 Google Fonts Integration – Montserrat and Open Sans for professional typography.
