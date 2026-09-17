@@ -1,317 +1,203 @@
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <title>Soweto City Electrical Wholesalers | Home</title>
-    </head>
-    <body style="font-family: 'Inter', Arial, sans-serif; margin: 0; padding: 0; background-color: #FFFFFF; color: #1A1A1A;"></body>
-    <header style="background-color: #FFFFFF; padding: 30px 60px; border-bottom: 1px solid #E5E5E5;">
-        <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;">
-
-        <!--Comapany logo-->
-        <div style="display: flex; align-items: center; gap: 20px;">
-            <img src="Images/Company logo.jpg" alt="Soweto City Electrical Wholesalers Logo" width="70" height="42" style="border-radius: 2px;">
-            <h1 style="color: #1A1A1A; margin: 0; font-size: 18px; font-weight: 600; letter-spacing: 0.5px;">
-            Soweto City Electrical Wholesalers
-            </h1>
-        </div>
-
-            <!--Navigation Menu-->
-            <nav>
-                <p style="margin: 0; font-size: 14px; font-weight: 400;">
-                    <a href="#" style="color: #1A1A1A; text-decoration: none; padding: 8px 14px; font-weight: 600;">
-                        Home
-                    </a>
-                    <a href="Assets/about.html" style="color: #666666; text-decoration: none; padding: 8px 14px;">
-                        About
-                    </a>
-                    <a href="Assets/products.html" style="color: #666666; text-decoration: none; padding: 8px 14px;">
-                        Products
-                    </a>
-                    <a href="Assets/enquiry.html" style="color: #666666; text-decoration: none; padding: 8px 14px;">
-                        Enquiry
-                    </a>
-                    <a href="Assets/contact.html" style="color: #666666; text-decoration: none; padding: 8px 14px;">
-                        Contact
-                    </a>
-                    </p>
-            </nav>
-    </header>
+        <link rel="stylesheet" href="CSS/Style.css">
         
+    </head>
+    <body>
+
+        
+        <header>
+            <div class="header-container">
+
+                <!--Company Logo-->
+                <div class="logo-block">
+                    <img src="Images/Company logo.jpg" width="770" height="250">
+                </div>
+
+                <!--Navigation Menu-->
+                <nav>
+                    <p>
+                        <a href="#" class="active">Home</a>
+                        <a href="Assets/about.html">About</a>
+                        <a href="Assets/products.html">Products</a>
+                        <a href="Assets/enquiry.html">Enquiry</a>
+                        <a href="Assets/contact.html">Contact</a>
+                    </p>
+                </nav>
+
+            </div>
+        </header>
+
         <main>
 
-            <main>
-                <!--Welcome-->
-            <section style="padding: 140px 60px 100px 60px; max-width: 1200px; margin: 0 auto;">
-                
-                <p style="color: #FF6B00; font-size: 13px; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; margin: 0 0 25px 0;">
-                    Est. 2006 &mdash; Soweto, Johannesburg
+            <!--Intoduction-->
+            <section class="hero-section">
+                <p class="section-label">Est. 2006 &mdash; Soweto, Johannesburg</p>
+                <h2>Powering the future with sustainable energy solutions.</h2>
+                <p>Your trusted partner for electrical supplies, solar solutions and component manufacturing since 2006.</p>
+                <p>
+                    <a href="Assets/products.html" class="accent-link">View Our Products &rarr;</a>
+                    <a href="Assets/enquiry.html" class="muted-link">Request a Quote &rarr;</a>
                 </p>
-                
-                <h2 style="color: #1A1A1A; font-size: 56px; font-weight: 700; line-height: 1.15; margin: 0 0 30px 0; max-width: 900px; letter-spacing: -1px;">
-                    Powering the future with sustainable energy solutions.
-                </h2>
-                
-                <p style="color: #666666; font-size: 19px; line-height: 1.7; max-width: 650px; margin-bottom: 50px; font-weight: 300;">
-                    Your trusted partner for electrical supplies, solar solutions 
-                    and component manufacturing since 2006.
-                </p>
-                
-                <p style="margin: 0;">
-                    <a href="Assets/products.html" style="color: #1A1A1A; text-decoration: none; font-size: 15px; font-weight: 600; padding-bottom: 3px; border-bottom: 2px solid #FF6B00; margin-right: 40px;">
-                        View Our Products &rarr;
-                    </a>
-                    <a href="Assets/enquiry.html" style="color: #666666; text-decoration: none; font-size: 15px; font-weight: 500;">
-                        Request a Quote &rarr;
-                    </a>
-                </p>
-                
             </section>
+
             <!--Website Structure-->
-            <section style="padding: 100px 60px; border-top: 1px solid #E5E5E5;">
-                <div style="max-width: 1200px; margin: 0 auto;">
-                    
-                    <p style="color: #FF6B00; font-size: 12px; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; margin: 0 0 15px 0;">
-                        Navigation
-                    </p>
-                    
-                    <h2 style="color: #1A1A1A; font-size: 36px; font-weight: 700; margin: 0 0 20px 0; letter-spacing: -0.5px;">
-                        Website structure
-                    </h2>
-                    
-                    <p style="color: #666666; font-size: 17px; margin-bottom: 60px; font-weight: 300;">
-                        Explore our website through the following pages.
-                    </p>
+            <section class="content-section">
+                <div class="content-wrapper-wide">
+                    <p class="section-label-small">Navigation</p>
+                    <h3>Website structure</h3>
+                    <p>Explore our website through the following pages.</p>
 
-                <div>
-                    <div style="border-top: 1px solid #E5E5E5; padding: 30px 0; display: flex; align-items: baseline; flex-wrap: wrap; gap: 30px;">
-                    <span style="color: #FF6B00; font-size: 14px; font-weight: 600; min-width: 40px;">01</span>
-                    <a href="index.html" style="color: #1A1A1A; font-size: 22px; font-weight: 600; min-width: 180px; text-decoration: none;">
-                    Home</a>
-                    <span style="color: #666666; font-size: 16px; flex: 1; font-weight: 300;">
-                    Welcome page with hero section and overview.</span>
-                </div>
+                    <div>
+                        <div class="row-item" style="padding: 30px 0; display: flex; align-items: baseline; flex-wrap: wrap; gap: 30px;">
+                            <span class="row-number" style="min-width: 40px;">01</span>
+                            <a href="#" class="row-title" style="min-width: 180px;">Home</a>
+                            <span class="row-desc" style="flex: 1;">Welcome page with hero section and overview.</span>
+                        </div>
 
-                <div style="border-top: 1px solid #E5E5E5; padding: 30px 0; display: flex; align-items: baseline; flex-wrap: wrap; gap: 30px;">
-                    <span style="color: #FF6B00; font-size: 14px; font-weight: 600; min-width: 40px;">02</span>
-                    <a href="Assets/about.html" style="color: #1A1A1A; font-size: 22px; font-weight: 600; min-width: 180px; text-decoration: none;">
-                    About Us</a>
-                    <span style="color: #666666; font-size: 16px; flex: 1; font-weight: 300;">
-                    Company history, founder, mission and vision.</span>
-                </div>
+                        <div class="row-item" style="padding: 30px 0; display: flex; align-items: baseline; flex-wrap: wrap; gap: 30px;">
+                            <span class="row-number" style="min-width: 40px;">02</span>
+                            <a href="Assets/about.html" class="row-title" style="min-width: 180px;">About Us</a>
+                            <span class="row-desc" style="flex: 1;">Company history, founder, mission and vision.</span>
+                        </div>
 
-                 <div style="border-top: 1px solid #E5E5E5; padding: 30px 0; display: flex; align-items: baseline; flex-wrap: wrap; gap: 30px;">
-                    <span style="color: #FF6B00; font-size: 14px; font-weight: 600; min-width: 40px;">04</span>
-                    <a href="Assets/products.html" style="color: #1A1A1A; font-size: 22px; font-weight: 600; min-width: 180px; text-decoration: none;">
-                    Products</a>
-                    <span style="color: #666666; font-size: 16px; flex: 1; font-weight: 300;">
-                    Electrical cable, light bulbs, sockets, circuit breakers and plastic taps.</span>
-                </div>
+                        <div class="row-item" style="padding: 30px 0; display: flex; align-items: baseline; flex-wrap: wrap; gap: 30px;">
+                            <span class="row-number" style="min-width: 40px;">04</span>
+                            <a href="Assets/products.html" class="row-title" style="min-width: 180px;">Products</a>
+                            <span class="row-desc" style="flex: 1;">Electrical cable, light bulbs, sockets, circuit breakers and plastic taps.</span>
+                        </div>
 
-                <div style="border-top: 1px solid #E5E5E5; padding: 30px 0; display: flex; align-items: baseline; flex-wrap: wrap; gap: 30px;">
-                    <span style="color: #FF6B00; font-size: 14px; font-weight: 600; min-width: 40px;">05</span>
-                    <a href="Assets/enquiry.html" style="color: #1A1A1A; font-size: 22px; font-weight: 600; min-width: 180px; text-decoration: none;">
-                    Enquiry</a>
-                    <span style="color: #666666; font-size: 16px; flex: 1; font-weight: 300;">
-                    Contact form for product and service enquiries.</span>
-                </div>
+                        <div class="row-item" style="padding: 30px 0; display: flex; align-items: baseline; flex-wrap: wrap; gap: 30px;">
+                            <span class="row-number" style="min-width: 40px;">05</span>
+                            <a href="Assets/enquiry.html" class="row-title" style="min-width: 180px;">Enquiry</a>
+                            <span class="row-desc" style="flex: 1;">Contact form for product and service enquiries.</span>
+                        </div>
 
-                <div style="border-top: 1px solid #E5E5E5; border-bottom: 1px solid #E5E5E5; padding: 30px 0; display: flex; align-items: baseline; flex-wrap: wrap; gap: 30px;">
-                    <span style="color: #FF6B00; font-size: 14px; font-weight: 600; min-width: 40px;">06</span>
-                    <a href="Assets/contact.html" style="color: #1A1A1A; font-size: 22px; font-weight: 600; min-width: 180px; text-decoration: none;">
-                    Contact</a>
-                    <span style="color: #666666; font-size: 16px; flex: 1; font-weight: 300;">
-                    Branch locations with Google Maps.</span>           
+                        <div class="row-item" style="border-bottom: 1px solid #E5E5E5; padding: 30px 0; display: flex; align-items: baseline; flex-wrap: wrap; gap: 30px;">
+                            <span class="row-number" style="min-width: 40px;">06</span>
+                            <a href="Assets/contact.html" class="row-title" style="min-width: 180px;">Contact</a>
+                            <span class="row-desc" style="flex: 1;">Branch locations with Google Maps.</span>
+                            </div>
+                    </div>
                 </div>
             </section>
 
-
-        </main>
-        
             <!--Welcome Section-->
-            <section style="padding: 120px 60px; background-color: #FAFAFA;">
-                <div style="max-width: 900px; margin: 0 auto;">
-                    
-                    <p style="color: #FF6B00; font-size: 12px; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; margin: 0 0 15px 0;">
-                    Welcome
+            <section class="content-section-light">
+                <div class="content-wrapper">
+                    <p class="section-label-small">Welcome</p>
+                    <h2 class="heading-medium">Welcome to Soweto City Electrical Wholesalers.</h2>
+                    <p>Founded in 2006, Soweto City Wholesalers has grown from a single electrical appliance wholesaler into a trusted name in the electrical industry.</p>
+                    <p>Our team of experienced professionals is committed to delivering exceptional service and reliable products, including electrical components, solar solutions and custom manufacturing.</p>
+                    <p>
+                        <a href="Assets/about.html" class="accent-link">Read More About Us &rarr;</a>
                     </p>
-                    
-                    <h2 style="color: #1A1A1A; font-size: 40px; font-weight: 700; line-height: 1.3; margin: 0 0 30px 0; letter-spacing: -0.5px;">
-                    Welcome to Soweto City Electrical Wholesalers.
-                    </h2>
-                    
-                    <p style="color: #666666; font-size: 18px; line-height: 1.8; margin-bottom: 25px; font-weight: 300;">
-                    Founded in 2006, Soweto City Wholesalers has grown from a single electrical 
-                    appliance wholesaler into a trusted name in the electrical industry.
-                    </p>
-                    
-                    <p style="color: #666666; font-size: 18px; line-height: 1.8; margin-bottom: 40px; font-weight: 300;">
-                    Our team of experienced professionals is committed to delivering exceptional 
-                    service and reliable products, including electrical components, solar solutions and custom manufacturing.
-                    </p>
-                    
-                    <p style="margin: 0;">
-                        <a href="Assets/about.html" style="color: #1A1A1A; text-decoration: none; font-size: 15px; font-weight: 600; padding-bottom: 3px; border-bottom: 2px solid #FF6B00;">
-                        Read More About Us &rarr;
-                        </a>
-                    </p>
-                    
                 </div>
             </section>
 
             <!--Branches-->
-            <section style="padding: 120px 60px;">
-                <div style="max-width: 1200px; margin: 0 auto;">
-                    
-                    <p style="color: #FF6B00; font-size: 12px; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; margin: 0 0 15px 0;">
-                        Locations
-                    </p>
-                    
-                    <h2 style="color: #1A1A1A; font-size: 40px; font-weight: 700; margin: 0 0 20px 0; letter-spacing: -0.5px;">
-                    Where our branches are located
-                    </h2>
-                    
-                    <p style="color: #666666; font-size: 18px; margin-bottom: 60px; font-weight: 300;">
-                    Visit us at one of our two locations in Soweto.
-                    </p>
-                    
+            <section class="content-section">
+                <div class="content-wrapper-wide">
+                    <p class="section-label-small">Locations</p>
+                    <h2 class="heading-medium">Where our branches are located</h2>
+                    <p>Visit us at one of our two locations in Soweto.</p>
+
                     <!--First Branch Location-->
-                    <div style="border-top: 1px solid #E5E5E5; padding: 40px 0;">
-                        <div style="display: flex; flex-wrap: wrap; gap: 40px;">
-                            
-                            <div style="flex: 1; min-width: 200px;">
-                                <p style="color: #FF6B00; font-size: 13px; font-weight: 600; letter-spacing: 2px; margin: 0 0 10px 0;">
-                                Location 01
-                                </p>
-                                <h3 style="color: #1A1A1A; font-size: 24px; font-weight: 600; margin: 0;">Dobsonville Branch</h3>
+                    <div class="item-row">
+                        <div class="flex-row">
+                            <div class="flex-half">
+                                <p class="section-label-small">Location 01</p>
+                                <h3>Dobsonville Branch</h3>
                             </div>
-                            
-                            <div style="flex: 1; min-width: 250px;">
-                                <address style="font-style: normal; color: #666666; font-size: 16px; line-height: 1.8; margin: 0 0 15px 0; font-weight: 300;">
-                                Shop No. 54, Elias Motsoaledi Rd, Mmesi Park<br>
-                                Dobsonville Shopping Centre<br>
-                                Soweto, 1863 Johannesburg
+                            <div class="flex-half">
+                                <address>
+                                    Shop No. 54, Elias Motsoaledi Rd, Mmesi Park<br>
+                                    Dobsonville Shopping Centre<br>
+                                    Soweto, 1863 Johannesburg
                                 </address>
-                                <p style="color: #1A1A1A; font-size: 15px; font-weight: 500; margin: 0;">+27 (0) 11 988 0102</p>
+                                <p>+27 (0) 11 988 0102</p>
                             </div>
-                            
                         </div>
                     </div>
 
                     <!--Second Branch Location-->
-                     <div style="border-top: 1px solid #E5E5E5; border-bottom: 1px solid #E5E5E5; padding: 40px 0;">
-                        <div style="display: flex; flex-wrap: wrap; gap: 40px;">
-                            
-                            <div style="flex: 1; min-width: 200px;">
-                                <p style="color: #FF6B00; font-size: 13px; font-weight: 600; letter-spacing: 2px; margin: 0 0 10px 0;">
-                                Location 02
-                                </p>
-                                <h3 style="color: #1A1A1A; font-size: 24px; font-weight: 600; margin: 0;">Dube Branch</h3>
+                    <div class="item-row item-row-last">
+                        <div class="flex-row">
+                            <div class="flex-half">
+                                <p class="section-label-small">Location 02</p>
+                                <h3>Dube Branch</h3>
                             </div>
-                            
-                            <div style="flex: 1; min-width: 250px;">
-                                <address style="font-style: normal; color: #666666; font-size: 16px; line-height: 1.8; margin: 0 0 15px 0; font-weight: 300;">
-                                Rob Ctr, Malhalfele Rd, Dube<br>
-                                Soweto, 1801 Johannesburg
+                            <div class="flex-half">
+                                <address>
+                                    Rob Ctr, Malhalfele Rd, Dube<br>
+                                    Soweto, 1801 Johannesburg
                                 </address>
-                                <p style="color: #1A1A1A; font-size: 15px; font-weight: 500; margin: 0;">+27 (0) 11 982 5588</p>
+                                <p>+27 (0) 11 982 5588</p>
                             </div>
-                            
                         </div>
                     </div>
-                    
                 </div>
             </section>
-            
+
         </main>
 
         <!--Footer-->
-        <footer style="background-color: #FAFAFA; padding: 80px 60px 40px 60px; border-top: 1px solid #E5E5E5;">
-            
-            <div style="max-width: 1200px; margin: 0 auto;">
-                
-                <div style="display: flex; flex-wrap: wrap; gap: 60px; margin-bottom: 60px;">
-                    
+        <footer>
+            <div class="footer-container">
+
+                <div class="footer-columns">
+
                     <!--Company Information-->
-                    <div style="flex: 1; min-width: 250px;">
-                        <h4 style="color: #1A1A1A; margin: 0 0 20px 0; font-size: 15px; font-weight: 600; letter-spacing: 0.5px;">
-                            Soweto City Electrical Wholesalers
-                        </h4>
-                        <p style="color: #666666; margin: 5px 0; font-size: 14px; line-height: 1.7; font-weight: 300;">
-                            Premier provider of electrical solutions, serving businesses, 
-                            municipalities and communities across Gauteng and beyond.
-                        </p>
-                        <p style="color: #999999; margin: 15px 0 0 0; font-size: 13px;">
-                            Reg No: 2006/035889/23
-                        </p>
+                    <div class="footer-col">
+                        <h4>Soweto City Electrical Wholesalers</h4>
+                        <p>Premier provider of electrical solutions, serving businesses, municipalities and communities across Gauteng and beyond.</p>
+                        <p class="footer-reg">Reg No: 2006/035889/23</p>
                     </div>
-                    
+
                     <!--Quick Links-->
-                    <div style="flex: 1; min-width: 150px;">
-                        <h4 style="color: #1A1A1A; margin: 0 0 20px 0; font-size: 15px; font-weight: 600; letter-spacing: 0.5px;">
-                            Navigation
-                        </h4>
-                        <p style="margin: 8px 0; font-size: 14px;">
-                            <a href="index.html" style="color: #666666; text-decoration: none; font-weight: 300;">Home</a>
-                        </p>
-                        <p style="margin: 8px 0; font-size: 14px;">
-                            <a href="Assets/about.html" style="color: #666666; text-decoration: none; font-weight: 300;">About Us</a>
-                        </p>
-                        <p style="margin: 8px 0; font-size: 14px;">
-                            <a href="Assets/services.html" style="color: #666666; text-decoration: none; font-weight: 300;">Services</a>
-                        </p>
-                        <p style="margin: 8px 0; font-size: 14px;">
-                            <a href="Assets/products.html" style="color: #666666; text-decoration: none; font-weight: 300;">Products</a>
-                        </p>
-                        <p style="margin: 8px 0; font-size: 14px;">
-                            <a href="Assets/enquiry.html" style="color: #666666; text-decoration: none; font-weight: 300;">Enquiry</a>
-                        </p>
-                        <p style="margin: 8px 0; font-size: 14px;">
-                            <a href="Assets/contact.html" style="color: #666666; text-decoration: none; font-weight: 300;">Contact</a>
-                        </p>
+                    <div class="footer-col-links">
+                        <h4>Navigation</h4>
+                        <p><a href="#">Home</a></p>
+                        <p><a href="Assets/about.html">About Us</a></p>
+                        <p><a href="Assets/products.html">Products</a></p>
+                        <p><a href="Assets/enquiry.html">Enquiry</a></p>
+                        <p><a href="Assets/contact.html">Contact</a></p>
                     </div>
-                    
+
                     <!--Contact Information-->
-                    <div style="flex: 1; min-width: 250px;">
-                        <h4 style="color: #1A1A1A; margin: 0 0 20px 0; font-size: 15px; font-weight: 600; letter-spacing: 0.5px;">
-                        Contact Details
-                        </h4>
-                        <p style="color: #666666; margin: 5px 0; font-size: 14px; line-height: 1.7; font-weight: 300;">
-                        <span style="color: #1A1A1A; font-weight: 500;">Dobsonville:</span><br>
-                        Shop No. 54, Elias Motsoaledi Rd<br>
-                        Mmesi Park, Soweto, 1863
+                    <div class="footer-col-contact">
+                        <h4>Contact Details</h4>
+                        <p>
+                            <span class="footer-contact-label">Dobsonville:</span><br>
+                            Shop No. 54, Elias Motsoaledi Rd<br>
+                            Mmesi Park, Soweto, 1863
                         </p>
-                        <p style="color: #666666; margin: 10px 0; font-size: 14px; font-weight: 300;">
-                        <a href="tel:+27119880102" style="color: #666666; text-decoration: none;">+27 (0) 11 988 0102</a>
+                        <p><a href="tel:+27119880102">+27 (0) 11 988 0102</a></p>
+                        <p>
+                            <span class="footer-contact-label">Dube:</span><br>
+                            Rob Ctr, Malhalfele Rd<br>
+                            Dube, Soweto, 1801
                         </p>
-                        <p style="color: #666666; margin: 15px 0 0 0; font-size: 14px; line-height: 1.7; font-weight: 300;">
-                        <span style="color: #1A1A1A; font-weight: 500;">Dube:</span><br>
-                        Rob Ctr, Malhalfele Rd<br>
-                        Dube, Soweto, 1801
-                        </p>
-                        <p style="color: #666666; margin: 10px 0; font-size: 14px; font-weight: 300;">
-                        <a href="tel:+27119825588" style="color: #666666; text-decoration: none;">+27 (0) 11 982 5588</a>
-                        </p>
-                        <p style="color: #666666; margin: 15px 0 0 0; font-size: 14px; font-weight: 300;">
-                        <a href="mailto:soweto.cityelec@gmail.com" style="color: #666666; text-decoration: none;">soweto.cityelec@gmail.com</a>
-                        </p>
+                        <p><a href="tel:+27119825588">+27 (0) 11 982 5588</a></p>
+                        <p><a href="mailto:soweto.cityelec@gmail.com">soweto.cityelec@gmail.com</a></p>
                     </div>
+
+                    <!--Logo-->
+                    <div class="footer-col-logo">
+                        <img src="Images/Company logo.jpg" width="280" height="208">
+                    </div>
+
                 </div>
 
-                <!--Logo-->
-                 <div style="flex: 1; min-width: 180px; text-align: right;">
-                    <img src="Images/Company logo.jpg" alt="Soweto City Electrical Wholesalers Logo" width="180" height="108" style="border-radius: 4px;">
-                </div>
-                
                 <!--Copyright-->
-                <div style="border-top: 1px solid #E5E5E5; padding-top: 30px;">
-                    <p style="color: #999999; text-align: center; font-size: 13px; margin: 0; font-weight: 300;">
-                    &copy; 2026 Soweto City Electrical Wholesalers. All rights reserved.
-                    </p>
+                <div class="footer-bottom">
+                    <p>&copy; 2026 Soweto City Electrical Wholesalers. All rights reserved.</p>
                 </div>
-                
+
             </div>
         </footer>
-                
+
     </body>
 </html>
