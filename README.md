@@ -42,9 +42,12 @@ Website Project Proposal document in Word/PDF format.
 5 HTML pages including index, about, services, products, enquiry and contact.
 README.md with comprehensive documentation.
 Content research and sourcing.
+<img width="659" height="564" alt="Sitemap" src="https://github.com/user-attachments/assets/9fc9f590-d60c-4aee-82b9-16b52177d68b" />
+
 
 # Changelog
-For Part 1
+For Version/Part 1
+August 2026
 
 Selected two target organisations for the website project proposal: Soweto City Electrical Wholesalers and Magauta Designs & Projects.
 
@@ -72,8 +75,8 @@ Added HTML comments throughout the code to describe each section.
 
 Committed the initial project files to the GitHub repository.
 
-For Part 2
-
+For Version/Part 2
+September 2026
 Created an external stylesheet named Style.css inside the CSS folder.
 
 Linked the stylesheet to all five HTML pages.
@@ -102,19 +105,35 @@ Tested the layout on desktop, tablet and mobile screen widths using browser deve
 
 # References
 Afrihost, 2026. Business hosting plans. [online] Available at: https://www.afrihost.com/ [Accessed 8 August 2026].
+
 Bootstrap, 2026. Bootstrap 5 documentation. [online] Available at: https://getbootstrap.com/docs/5.0/getting-started/introduction/ [Accessed 9 August 2026].
+
 Domain.co.za, 2026. Domain registration pricing. [online] Available at: https://www.domain.co.za/ [Accessed 12 August 2026].
+
 Google Analytics, 2026. Google Analytics. [online] Available at: https://analytics.google.com/ [Accessed 8 August 2026].
+
 Indeed, 2026. Web developer salary in South Africa. [online] Available at: https://za.indeed.com/career/web-developer/salaries [Accessed 11 August 2026].
+
 Microsoft. 2026. Visual Studio Code. [Online]. Available at: https://code.visualstudio.com/ [Accessed 15 September 2026].
+
 Mozilla Developer Network. 2026. CSS: Cascading Style Sheets. [Online]. Available at: https://developer.mozilla.org/en-US/docs/Web/CSS [Accessed 15 September 2026].
+
 PayFast, 2026. Payment gateway pricing. [online] Available at: https://www.payfast.co.za/ [Accessed 12 August 2026].
+
 PayScale, 2026. Average web developer salary in South Africa. [online] Available at: https://www.payscale.com/research/ZA/Job=Web_Developer/Salary [Accessed 9 August 2026].
+
 Soweto City Electrical Wholesalers. 2025. Business Profile. Internal company documentation.
+
 W3Schools. 2026. CSS Flexbox. [Online]. Available at: https://www.w3schools.com/css/css3_flexbox.asp [Accessed 10 September 2026].
+
 W3Schools, 2026. CSS tutorial. [online] Available at: https://www.w3schools.com/css/ [Accessed 10 August 2026].
+
 W3Schools. 2026. CSS Tutorial. [Online]. Available at: https://www.w3schools.com/css/ [Accessed 10 September 2026].
+
 W3Schools. 2026. CSS Media Queries. [Online]. Available at: https://www.w3schools.com/css/css_rwd_mediaqueries.asp [Accessed 10 September 2026].
+
 W3Schools, 2026. HTML tutorial. [online] Available at: https://www.w3schools.com/html/ [Accessed 9 August 2026].
+
 W3Schools, 2026. JavaScript tutorial. [online] Available at: https://www.w3schools.com/js/ [Accessed 10 August 2026].
+
 Xneelo, 2026. Web hosting plans. [online] Available at: https://www.xneelo.co.za/ [Accessed 8 August 2026].
