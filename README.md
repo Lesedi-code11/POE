@@ -106,6 +106,7 @@ Bootstrap, 2026. Bootstrap 5 documentation. [online] Available at: https://getbo
 Domain.co.za, 2026. Domain registration pricing. [online] Available at: https://www.domain.co.za/ [Accessed 12 August 2026].
 Google Analytics, 2026. Google Analytics. [online] Available at: https://analytics.google.com/ [Accessed 8 August 2026].
 Indeed, 2026. Web developer salary in South Africa. [online] Available at: https://za.indeed.com/career/web-developer/salaries [Accessed 11 August 2026].
+Microsoft. 2026. Visual Studio Code. [Online]. Available at: https://code.visualstudio.com/ [Accessed 15 September 2026].
 PayFast, 2026. Payment gateway pricing. [online] Available at: https://www.payfast.co.za/ [Accessed 12 August 2026].
 PayScale, 2026. Average web developer salary in South Africa. [online] Available at: https://www.payscale.com/research/ZA/Job=Web_Developer/Salary [Accessed 9 August 2026].
 W3Schools. 2026. CSS Flexbox. [Online]. Available at: https://www.w3schools.com/css/css3_flexbox.asp [Accessed 10 September 2026].
