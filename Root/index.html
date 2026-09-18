@@ -27,21 +27,34 @@
                         <a href="Assets/enquiry.html">Enquiry</a>
                         <a href="Assets/contact.html">Contact</a>
                     </div>
-                </nav>
+</nav>
             </div>
         </header>
 
         <main>
 
             <!--Intoduction-->
-            <section class="hero-section">
+            <section style="padding: 160px 60px 120px 60px; position: relative;">
+    
+    <!-- Responsive background image using picture element -->
+            <picture>
+                <source media="(max-width: 768px)" srcset="Images/Hero banner mobile.jpg">
+                <source media="(min-width: 769px)" srcset="Images/Hero banner.jpg">
+                <img src="Images/Home Banner.png" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0;">
+            </picture>
+    
+    
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(10, 25, 47, 0.65); z-index: 1;"></div>
+
+            <div class="content-wrapper" style="position: relative; z-index: 2;">
                 <p class="section-label">Soweto, Johannesburg</p>
-                <h2>Powering the future with sustainable energy solutions.</h2>
-                <p>Your trusted partner for electrical supplies, solar solutions and component manufacturing since 2006.</p>
+                <h2 style="color: #FFFFFF;">Powering the future with sustainable energy solutions.</h2>
+                <p style="color: #E5E5E5;">Your trusted partner for electrical supplies, solar solutions and component manufacturing since 2006.</p>
                 <p>
-                    <a href="Assets/products.html" class="accent-link">View Our Products &rarr;</a>
-                    <a href="Assets/enquiry.html" class="muted-link">Request a Quote &rarr;</a>
+                <a href="Assets/products.html" class="accent-link" style="color: #FFFFFF; border-bottom-color: #FF6B00;">View Our Products &rarr;</a>
+                <a href="Assets/enquiry.html" class="muted-link" style="color: #CCCCCC;">Request a Quote &rarr;</a>
                 </p>
+            </div>
             </section>
 
             <!--Website Structure-->
@@ -86,16 +99,19 @@
             </section>
 
             <!--Welcome Section-->
-            <section class="content-section-light">
-                <div class="content-wrapper">
-                    <p class="section-label-small">Welcome</p>
-                    <h2 class="heading-medium">Welcome to Soweto City Electrical Wholesalers.</h2>
-                    <p>Founded in 2006, Soweto City Wholesalers has grown from a single electrical appliance wholesaler into a trusted name in the electrical industry.</p>
-                    <p>Our team of experienced professionals is committed to delivering exceptional service and reliable products, including electrical components, solar solutions and custom manufacturing.</p>
-                    <p>
-                        <a href="Assets/about.html" class="accent-link">Read More About Us &rarr;</a>
-                    </p>
-                </div>
+            <section style="padding: 120px 60px; background-image: url('Images/Welcome\ Banner.jpeg'); background-size: cover; background-position: center; position: relative;">
+    
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(10, 25, 47, 0.75);"></div>
+
+            <div class="content-wrapper" style="position: relative; z-index: 1;">
+                <p class="section-label-small">Welcome</p>
+                <h2 class="heading-medium" style="color: #FFFFFF;">Welcome to Soweto City Electrical Wholesalers.</h2>
+                <p style="color: #E5E5E5;">Founded in 2006, Soweto City Wholesalers has grown from a single electrical appliance wholesaler into a trusted name in the electrical industry.</p>
+                <p style="color: #E5E5E5;">Our team of experienced professionals is committed to delivering exceptional service and reliable products, including electrical components, solar solutions and custom manufacturing.</p>
+                <p>
+                <a href="Assets/about.html" class="accent-link" style="color: #FFFFFF; border-bottom-color: #FF6B00;">Read More About Us &rarr;</a>
+                </p>
+            </div>
             </section>
 
             <!--Branches-->
