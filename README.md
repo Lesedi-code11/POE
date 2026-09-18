@@ -6,7 +6,7 @@ ST10493726
 Web Development (Introduction)
 WEDE5020 
 
-Project Overview
+# Project Overview
 This website serves as the official online presence for Soweto City Electrical Wholesalers, a premier provider of electrical supplies, solar solutions and component manufacturing services based in Soweto, Gauteng. The website aims to establish a professional digital footprint for the organisation, showcase its product catalogue and enable customer enquiries for products and services.
 
 Organisation Name: Soweto City Electrical Wholesalers  
@@ -15,13 +15,13 @@ Founder: Saniboy Alfred Molatlhoe
 Branches: Dobsonville and Dube (Soweto)
 
 
-Website Goals and Objectives
+# Website Goals and Objectives
 1. Increase Sales – Provide an online platform to reach customers beyond physical branch locations.
 2. Display Product Catalogue – Showcase the full range of electrical components, solar solutions and spare parts.
 3. Generate Leads – Capture enquiries for bulk orders, custom manufacturing and service requests.
 4. Build Brand Awareness – Establish credibility and reflect the organisation's 40-year legacy.
 
-Key Features and Functionality
+# Key Features and Functionality
 Responsive design optimised for desktop, tablet, and mobile devices.
 Product and service information with detailed pages for electrical supplies, solar solutions, component manufacturing and repairs.
 Enquiry form allowing customers to submit product, bulk order and service enquiries.
@@ -29,7 +29,7 @@ Contact information with branch addresses, phone numbers and email contacts.
 Interactive navigation with a hamburger menu for mobile devices.
 Google Fonts integration using Montserrat and Open Sans for professional typography.
 
-Sitemap
+# Sitemap
 Home page with hero section and overview.
 About Us page with founder information, mission, vision, and branches.
 Services page covering electrical supplies, solar solutions, component manufacturing, and installation and maintenance.
@@ -43,7 +43,64 @@ Website Project Proposal document in Word/PDF format.
 README.md with comprehensive documentation.
 Content research and sourcing.
 
-References
+# Changelog
+For Part 1
+
+Selected two target organisations for the website project proposal: Soweto City Electrical Wholesalers and Magauta Designs & Projects.
+
+Researched both organisations, including their history, services, target audience and existing online presence.
+
+Drafted two project proposals with organisation overviews, website goals, KPIs, current website analysis (Magauta only), proposed features, design direction, technical requirements, timelines and budgets.
+
+Chose Soweto City Electrical Wholesalers as the primary organisation for the build.
+
+Created the folder structure for the project: root folder with index.html, plus Assets folder for inner pages, and Images.
+
+Created five HTML pages: index.html, about.html, products.html, enquiry.html, and contact.html.
+
+Added a navigation menu linking all five pages.
+
+Added content to each page: hero sections, service and product descriptions, contact details, Google Maps embeds for both branches, and a footer with company information.
+
+Added the company logo to the header and footer of each page.
+
+Included the founder biography on the about page (later adjusted to focus only on his electrical career and business).
+
+Embedded Google Maps for the Dobsonville and Dube branches on the contact page.
+
+Added HTML comments throughout the code to describe each section.
+
+Committed the initial project files to the GitHub repository.
+
+For Part 2
+
+Created an external stylesheet named Style.css inside the CSS folder.
+
+Linked the stylesheet to all five HTML pages.
+
+Removed inline colours and replaced them with CSS.
+
+Applied a colour scheme.
+
+Set base typography in CSS.
+
+Styled the navigation with an animated orange underline that slides in from the left on hover.
+
+Added an active state to the navigation so the current page is always highlighted.
+
+Built reusable classes for section labels, accent links, muted links, and dividers.
+
+Styled the enquiry form with borderless inputs that have an orange bottom border on focus.
+
+Added a submit button with a hover state that matches the accent colour.
+
+Styled the footer with a four-column layout: company information, navigation links, contact details, and the company logo.
+
+Added responsive media queries at 992px, 768px, and 480px to adjust font sizes, section padding, image sizes and layout for tablet and mobile.
+
+Tested the layout on desktop, tablet and mobile screen widths using browser developer tools.
+
+# References
 Afrihost, 2026. Business hosting plans. [online] Available at: https://www.afrihost.com/ [Accessed 8 August 2026].
 Bootstrap, 2026. Bootstrap 5 documentation. [online] Available at: https://getbootstrap.com/docs/5.0/getting-started/introduction/ [Accessed 9 August 2026].
 Domain.co.za, 2026. Domain registration pricing. [online] Available at: https://www.domain.co.za/ [Accessed 12 August 2026].
