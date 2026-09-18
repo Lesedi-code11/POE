@@ -129,6 +129,19 @@ header{
     border-radius: 2px;
 }
 
+/*LOGO SIZING*/
+.logo-img{
+    width: 250px;
+    height: 150px;
+    border-radius: 2px;
+}
+
+.footer-logo{
+    width: 200px;
+    height: 150px;
+    border-radius: 4px;
+}
+
 /*NAVIGATION*/
 nav p{
     margin: 0;
@@ -136,12 +149,72 @@ nav p{
     font-weight: 400;
 }
 
-nav a{
+/*NAVIGATION*/
+nav{
+    display: flex;
+    align-items: center;
+}
+
+/*Hide the checkbox*/
+.menu-toggle{
+    display: none;
+}
+
+/*Hide the menu button on desktop*/
+.menu-button{
+    display: none;
+    cursor: pointer;
+    color: #1A1A1A;
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 8px 14px;
+}
+
+/*Default horizontal menu*/
+.nav-links{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+}
+
+.nav-links a{
     color: #666666;
     text-decoration: none;
     padding: 8px 14px;
     position: relative;
     transition: color 0.3s ease;
+}
+
+/*Hover underline slides in from left*/
+.nav-links a::after{
+    content: '';
+    position: absolute;
+    left: 14px;
+    right: 14px;
+    bottom: 0;
+    height: 2px;
+    background-color: #FF6B00;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.nav-links a:hover{
+    color: #1A1A1A;
+}
+
+.nav-links a:hover::after{
+    transform: scaleX(1);
+}
+
+.nav-links a.active{
+    color: #1A1A1A;
+    font-weight: 600;
+}
+
+.nav-links a.active::after{
+    transform: scaleX(1);
 }
 
 /*HOVER FEATURE - underline slides in from left*/
@@ -242,12 +315,12 @@ nav a.active::after{
     align-items: flex-start;
 }
 
-.product-items{
+.flex-half{
     flex: 1;
     min-width: 280px;
 }
 
-.products{
+.flex-two-thirds{
     flex: 4;
     min-width: 300px;
 }
@@ -282,6 +355,29 @@ nav a.active::after{
 .item-meta span{
     color: #1A1A1A;
     font-weight: 600;
+}
+
+/*BUY BUTTON*/
+.buy-button{
+    display: inline-block;
+    background-color: #FF6B00;
+    color: #FFFFFF;
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 12px 30px;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-top: 25px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.buy-button:hover{
+    background-color: #E55A00;
+    color: #FFFFFF;
+    transform: translateY(-2px);
 }
 
 /*FORMS*/
@@ -388,8 +484,6 @@ footer{
 }
 
 .footer-col-logo{
-    flex: 1;
-    min-width: 180px;
     text-align: right;
 }
 
@@ -472,6 +566,14 @@ footer{
     .footer-col-logo{
         text-align: left;
     }
+
+    .logo-img {
+    width: 250px;
+}
+
+.footer-logo {
+    width: 180px;
+}
 }
 
 @media (max-width: 768px){
@@ -536,10 +638,49 @@ footer{
     footer{
         padding: 50px 20px 25px 20px;
     }
+
+    .logo-img {
+    width: 250px;
+}
+
+.footer-logo{
+    width: 170px;
+}
+/*Show menu button on mobile*/
+.menu-button{
+    display: block;
+}
+
+/*Hide the menu links by default on mobile*/
+.nav-links{
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 10px;
+}
+
+/*Show the menu links when the checkbox is checked*/
+.menu-toggle:checked ~ .nav-links{
+    display: flex;
+}
+
+/*Stack the links vertically*/
+.nav-links a{
+    padding: 10px 0;
+}
+
+/*Hide the underline effect on mobile (optional)*/
+.nav-links a::after{
+    display: none;
+}
+
+.footer-logo{
+    width: 130px;
+}
 }
 
 @media (max-width: 480px){
-    h2 {
+    h2{
         font-size: 26px;
     }
 
@@ -560,4 +701,12 @@ footer{
     .map-embed{
         height: 250px;
     }
+
+    .logo-img {
+    width: 250px;
+}
+
+.footer-logo {
+    width: 180px;
+}
 }

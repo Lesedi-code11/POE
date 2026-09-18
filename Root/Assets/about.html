@@ -13,18 +13,20 @@
 
                 <!--Company Logo-->
                 <div class="logo-block">
-                    <img src="../Images/Company logo.jpg" width="770" height="250">
+                    <img src="../Images/Company logo.jpg" class="logo-img">
                 </div>
 
                 <!--Navigation Menu-->
                 <nav>
-                    <p>
+                    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                    <label for="menu-toggle" class="menu-button">☰</label>
+                    <div class="nav-links">
                         <a href="../index.html">Home</a>
                         <a href="#" class="active">About</a>
                         <a href="products.html">Products</a>
                         <a href="enquiry.html">Enquiry</a>
                         <a href="contact.html">Contact</a>
-                    </p>
+                    </div>
                 </nav>
 
             </div>
@@ -52,11 +54,22 @@
             <!--Our Founder-->
             <section class="content-section-light">
                 <div class="content-wrapper">
-                    <p class="section-label-small">Our Founder</p>
-                    <h3>Saniboy Alfred Molatlhoe</h3>
-                    <p>Driven by a desire to build a better life, he went on to study to become an electrician. He trained at Dube Technical Vocational College and began his career as an electrician for the City of Johannesburg.</p>
-                    <p>From a single electrical appliance wholesaler in Soweto, he expanded the business into a multi-branch electrical solutions provider, surviving economic downturns and setbacks such as the COVID-19 pandemic and looting incidents. Today, his company remains a beacon of black entrepreneurship and innovation, manufacturing electrical components and expanding operations through strategic partnerships.</p>
-                </div>
+                <p class="section-label-small">Our Founder</p>
+
+                <div class="flex-row">
+            <!-- Founder Image -->
+            <div class="flex-half">
+                <img src="../Images/Founder.jpeg" style="width: 100%; max-width: 400px; border-radius: 4px; display: block;">
+            </div>
+
+            <!-- Founder Text -->
+            <div class="flex-two-thirds">
+                <h3>Saniboy Alfred Molatlhoe</h3>
+                <p>Driven by a desire to build a better life, he went on to study to become an electrician. He trained at Dube Technical Vocational College and began his career as an electrician for the City of Johannesburg.</p>
+                <p>From a single electrical appliance wholesaler in Soweto, he expanded the business into a multi-branch electrical solutions provider, surviving economic downturns and setbacks such as the COVID-19 pandemic and looting incidents. Today, his company remains a beacon of black entrepreneurship and innovation, manufacturing electrical components and expanding operations through strategic partnerships.</p>
+            </div>
+        </div>
+    </div>
             </section>
 
             <!--The Mission-->
@@ -177,7 +190,7 @@
 
                     <!--Logo-->
                     <div class="footer-col-logo">
-                        <img src="../Images/Company logo.jpg" width="280" height="208">
+                        <img src="../Images/Company logo.jpg" class="footer-logo">
                     </div>
 
                 </div>
