@@ -108,7 +108,11 @@ Google Analytics, 2026. Google Analytics. [online] Available at: https://analyti
 Indeed, 2026. Web developer salary in South Africa. [online] Available at: https://za.indeed.com/career/web-developer/salaries [Accessed 11 August 2026].
 PayFast, 2026. Payment gateway pricing. [online] Available at: https://www.payfast.co.za/ [Accessed 12 August 2026].
 PayScale, 2026. Average web developer salary in South Africa. [online] Available at: https://www.payscale.com/research/ZA/Job=Web_Developer/Salary [Accessed 9 August 2026].
+W3Schools. 2026. CSS Flexbox. [Online]. Available at: https://www.w3schools.com/css/css3_flexbox.asp [Accessed 10 September 2026].
 W3Schools, 2026. CSS tutorial. [online] Available at: https://www.w3schools.com/css/ [Accessed 10 August 2026].
+W3Schools. 2026. CSS Tutorial. [Online]. Available at: https://www.w3schools.com/css/ [Accessed 10 September 2026].
+W3Schools. 2026. CSS Media Queries. [Online]. Available at: https://www.w3schools.com/css/css_rwd_mediaqueries.asp [Accessed 10 September 2026].
 W3Schools, 2026. HTML tutorial. [online] Available at: https://www.w3schools.com/html/ [Accessed 9 August 2026].
 W3Schools, 2026. JavaScript tutorial. [online] Available at: https://www.w3schools.com/js/ [Accessed 10 August 2026].
 Xneelo, 2026. Web hosting plans. [online] Available at: https://www.xneelo.co.za/ [Accessed 8 August 2026].
+Mozilla Developer Network. 2026. CSS: Cascading Style Sheets. [Online]. Available at: https://developer.mozilla.org/en-US/docs/Web/CSS [Accessed 15 September 2026].
