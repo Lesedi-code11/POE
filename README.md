@@ -1,4 +1,4 @@
-Soweto City Electrical Wholesalers Official Website
+# Soweto City Electrical Wholesalers Official Website
 Web development project for Soweto City Electrical Wholesalers featuring a product catalogue, online ordering and responsive design.
 
 Lesedi Molatlhoe 
