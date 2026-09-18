@@ -42,6 +42,7 @@ Website Project Proposal document in Word/PDF format.
 5 HTML pages including index, about, services, products, enquiry and contact.
 README.md with comprehensive documentation.
 Content research and sourcing.
+
 <img width="659" height="564" alt="Sitemap" src="https://github.com/user-attachments/assets/9fc9f590-d60c-4aee-82b9-16b52177d68b" />
 
 
