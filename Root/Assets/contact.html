@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Soweto City Electrical Wholesalers | Contact</title>
         <link rel="stylesheet" href="../CSS/Style.css">
 
@@ -117,6 +119,40 @@
                 </div>
             </section>
 
+            <!-- General Contact Form -->
+            <section class="content-section-light">
+                <div class="content-wrapper">
+                    <p class="section-label-small">Send a Message</p>
+                    <h3>Contact Us Directly</h3>
+
+                    <form id="contactForm" action="#" method="POST" class="enquiry-form" novalidate>
+
+                        <div class="form-group">
+                            <label for="contactName">Full Name</label>
+                            <input type="text" id="contactName" name="contactName" placeholder="Enter your full name" required>
+                            <span class="error-msg" style="color: #E74C3C; font-size: 13px; display: none;"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactEmail">Email Address</label>
+                            <input type="email" id="contactEmail" name="contactEmail" placeholder="Enter your email address" required>
+                            <span class="error-msg" style="color: #E74C3C; font-size: 13px; display: none;"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactMessage">Your Message</label>
+                            <textarea id="contactMessage" name="contactMessage" rows="5" placeholder="Type your message here..." required></textarea>
+                            <span class="error-msg" style="color: #E74C3C; font-size: 13px; display: none;"></span>
+                        </div>
+
+                        <div>
+                            <button type="submit" class="submit-button">Send Message &rarr;</button>
+                        </div>
+
+                    </form>
+                </div>
+            </section>
+
         </main>
 
         <!--Footer-->
@@ -175,5 +211,6 @@
             </div>
         </footer>
 
+        <script src="../Javascript/JS.js"></script>
     </body>
 </html>

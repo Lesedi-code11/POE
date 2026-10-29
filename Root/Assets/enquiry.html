@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Soweto City Electrical Wholesalers | Enquiry</title>
         <link rel="stylesheet" href="../CSS/Style.css">
 
@@ -108,24 +110,33 @@
                     <p class="section-label-small">Submit</p>
                     <h3>Submit your enquiry</h3>
 
-                    <form action="#" method="POST" class="enquiry-form">
+                        <form id="enquiryForm" action="https://api.web3forms.com/submit" method="POST" class="enquiry-form" novalidate>
+
+                        <!--Web3Forms Access Key-->
+                        <input type="hidden" name="access_key" value="57e7f9e3-11bd-44c5-8cf9-b59f74380bce">
+                        
+                        <!--Custom Email Subject-->
+                        <input type="hidden" name="subject" value="New Website Enquiry - Soweto City Electrical">
 
                         <!--Full Name-->
                         <div class="form-group">
                             <label for="fullName">Full Name</label>
                             <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+                            <span class="error-msg" style="color: #E74C3C; font-size: 13px; display: none;"></span>
                         </div>
 
                         <!--Phone Number-->
                         <div class="form-group">
                             <label for="phone">Phone Number</label>
                             <input type="tel" id="phone" name="phone" placeholder="Enter your contact number" required>
+                            <span class="error-msg" style="color: #E74C3C; font-size: 13px; display: none;"></span>
                         </div>
 
                         <!--Email Address-->
                         <div class="form-group">
                             <label for="email">Email Address</label>
                             <input type="email" id="email" name="email" placeholder="Enter your email address">
+                            <span class="error-msg" style="color: #E74C3C; font-size: 13px; display: none;"></span>
                         </div>
 
                         <!--Enquiry Type-->
@@ -140,18 +151,23 @@
                                 <option value="repairs">Repairs &amp; Maintenance</option>
                                 <option value="other">Other</option>
                             </select>
+                            <span class="error-msg" style="color: #E74C3C; font-size: 13px; display: none;"></span>
                         </div>
 
                         <!--Message-->
                         <div class="form-group">
                             <label for="message">Your Message</label>
                             <textarea id="message" name="message" rows="5" placeholder="Tell us how we can assist you..." required></textarea>
+                            <span class="error-msg" style="color: #E74C3C; font-size: 13px; display: none;"></span>
                         </div>
 
                         <!--Submit-->
                         <div>
                             <button type="submit" class="submit-button">Submit Enquiry &rarr;</button>
                         </div>
+
+                        <!-- AJAX Success Message Container -->
+                        <div id="formSuccess" style="display: none; margin-top: 20px; padding: 20px; background: #d4edda; color: #155724; border-radius: 4px;"></div>
 
                     </form>
                 </div>
@@ -215,5 +231,6 @@
             </div>
         </footer>
 
+        <script src="../Javascript/JS.js"></script>
     </body>
 </html>

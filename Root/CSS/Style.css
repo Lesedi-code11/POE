@@ -138,30 +138,26 @@ header{
 /*LOGO SIZING*/
 .logo-img{
     width: 250px;
-    height: 150px;
+    height: auto;
     border-radius: 2px;
 }
 
 .footer-logo{
     width: 200px;
-    height: 150px;
+    height: auto;
     border-radius: 4px;
 }
 
 /*NAVIGATION*/
+nav{
+    display: flex;
+    align-items: center;
+}
+
 nav p{
     margin: 0;
     font-size: 0.875rem;
     font-weight: 400;
-}
-
-.nav-links a{
-    font-size: 0.875rem;
-}
-
-nav{
-    display: flex;
-    align-items: center;
 }
 
 /*Hide the checkbox*/
@@ -171,31 +167,12 @@ nav{
 
 .menu-button{
     display: none;
-}
-
-.nav-links{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-/*MOBILE MENU TOGGLE*/
-.menu-toggle{
-    display: none;
-}
-
-.menu-button{
-    display: none;
     cursor: pointer;
     color: #1A1A1A;
     font-family: 'Inter', Arial, sans-serif;
-    font-size: 0.875rem;
+    font-size: 1.5rem;
     font-weight: 600;
     padding: 8px 14px;
-}
-
-.nav-links{
-    display: flex;
-    flex-wrap: wrap;
 }
 
 /*Default horizontal menu*/
@@ -211,6 +188,7 @@ nav{
     padding: 8px 14px;
     position: relative;
     transition: color 0.3s ease;
+    font-size: 0.875rem;
 }
 
 /*Hover underline slides in from left*/
@@ -239,38 +217,12 @@ nav{
     color: #FF6B00;
 }
 
-.nav-links a.active::after{
-    transform: scaleX(1);
-}
-
-/*HOVER FEATURE - underline slides in from left*/
-nav a::after{
-    content: '';
-    position: absolute;
-    left: 14px;
-    right: 14px;
-    bottom: 0;
-    height: 2px;
-    background-color: #FF6B00;
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform 0.3s ease;
-}
-
-nav a:hover{
-    color: #1A1A1A;
-}
-
-nav a:hover::after{
-    transform: scaleX(1);
-}
-
-nav a.active{
+.nav-links a.active{
     color: #1A1A1A;
     font-weight: 600;
 }
 
-nav a.active::after{
+.nav-links a.active::after{
     transform: scaleX(1);
 }
 
@@ -330,8 +282,6 @@ nav a.active::after{
     border-top: 1px solid #E5E5E5;
     text-align: center;
 }
-
- 
 
 /*TWO-COLUMN FLEX LAYOUT*/
 .flex-row{
@@ -572,7 +522,6 @@ footer{
     font-size: 0.875rem;
 }
 
-
 .footer-social{
     border-top: 1px solid #E5E5E5;
     padding-top: 30px;
@@ -595,7 +544,7 @@ footer{
 /*RESPONSIVE DESIGNS*/
 @media (max-width: 992px){
     h2{
-    font-size: 2.625rem;
+        font-size: 2.625rem;
     }
 
     header{
@@ -621,28 +570,25 @@ footer{
     }
 
     .logo-img {
-    width: 250px;
+        width: 250px;
     }
 
-.footer-logo {
-    width: 180px;
+    .footer-logo {
+        width: 180px;
     }
 }
 
-@media (max-width: 768px) {
-    .menu-button {
-        display: block;
-    }
+@media (max-width: 768px){
     h2{
-    font-size: 2rem;
+        font-size: 2rem;
     }
-}
+
     h3{
-    font-size: 1.625rem;
+        font-size: 1.625rem;
     }
 
     p{
-    font-size: 1rem;
+        font-size: 1rem;
     }
 
     header{
@@ -650,19 +596,45 @@ footer{
     }
 
     .header-container{
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 15px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
     }
 
-    nav a{
-    font-size: 0.8125rem;
+    /*Show menu button on mobile*/
+    .menu-button{
+        display: block;
     }
 
+    /*Hide the menu links by default on mobile*/
+    .nav-links{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        padding-top: 10px;
+    }
 
-    nav a::after{
-        left: 8px;
-        right: 8px;
+    /*Show the menu links when the checkbox is checked*/
+    .menu-toggle:checked ~ .nav-links{
+        display: flex;
+    }
+
+    /*Stack the links vertically*/
+    .nav-links a{
+        padding: 10px 0;
+        font-size: 1rem;
+    }
+
+    /*Hide the underline effect on mobile (optional)*/
+    .nav-links a::after{
+        display: none;
+    }
+
+    /*Make sitemap rows stack on mobile so the page stays slim*/
+    .row-item {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 10px !important;
     }
 
     .hero-section{
@@ -680,7 +652,7 @@ footer{
     }
 
     .item-row h3{
-    font-size: 1.5rem;
+        font-size: 1.5rem;
     }
 
     .row-title{
@@ -696,72 +668,21 @@ footer{
     }
 
     .logo-img {
-    width: 250px;
+        width: 200px;
     }
 
-.footer-logo{
-    width: 170px;
+    .footer-logo{
+        width: 170px;
     }
-/*Show menu button on mobile*/
-.menu-button{
-    display: block;
-    }
-
-/*Hide the menu links by default on mobile*/
-.nav-links{
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    padding-top: 10px;
-    }
-
-/*Show the menu links when the checkbox is checked*/
-.menu-toggle:checked ~ .nav-links{
-    display: flex;
-    }
-
-/*Stack the links vertically*/
-.nav-links a{
-    padding: 10px 0;
-    }
-
-/*Hide the underline effect on mobile (optional)*/
-.nav-links a::after{
-    display: none;
-    }
-
-.footer-logo{
-    width: 130px;
-    }
-
-
-/*Mobile menu behaviour*/
-.menu-button{
-    display: block;
-}
-
-.nav-links{
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    padding-top: 10px;
-}
-
-.menu-toggle:checked ~ .nav-links {
-    display: flex;
-}
-
-.nav-links a {
-    padding: 10px 0;
 }
 
 @media (max-width: 480px){
    h2{
-    font-size: 1.625rem;
+        font-size: 1.625rem;
     }
 
     h3{
-    font-size: 1.375rem;
+        font-size: 1.375rem;
     }
 
     .hero-section{
@@ -783,10 +704,10 @@ footer{
     }
 
     .logo-img {
-    width: 250px;
+        width: 180px;
     }
 
-.footer-logo {
-    width: 180px;
+    .footer-logo {
+        width: 140px;
     }
 }
