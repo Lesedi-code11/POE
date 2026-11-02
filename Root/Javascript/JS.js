@@ -291,4 +291,117 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+        /*5. CHECKOUT PAGE LOGIC*/
+    const checkoutForm = document.getElementById('checkoutForm');
+    const checkoutCartItems = document.getElementById('checkoutCartItems');
+    const checkoutTotal = document.getElementById('checkoutTotal');
+    const orderDetailsInput = document.getElementById('orderDetailsInput');
+
+    if (checkoutForm && checkoutCartItems) {
+        let currentCart = JSON.parse(localStorage.getItem('sowetoCart')) || [];
+        
+        // If cart is empty, redirect back to products
+        if (currentCart.length === 0) {
+            window.location.href = 'products.html';
+            return;
+        }
+
+        // Display the cart on the checkout page
+        let total = 0;
+        let orderTextForEmail = "NEW ORDER DETAILS:\n\n";
+
+        checkoutCartItems.innerHTML = '';
+        currentCart.forEach(item => {
+            const li = document.createElement('li');
+            li.style.padding = '10px 0';
+            li.style.borderBottom = '1px solid #E5E5E5';
+            li.style.display = 'flex';
+            li.style.justifyContent = 'space-between';
+            li.innerHTML = `<span><strong>${item.name}</strong></span> <span>R${item.price}</span>`;
+            checkoutCartItems.appendChild(li);
+            
+            total += parseFloat(item.price);
+            orderTextForEmail += `- ${item.name} (R${item.price})\n`;
+        });
+
+        checkoutTotal.textContent = `Total: R${total}`;
+        orderTextForEmail += `\nTOTAL ESTIMATE: R${total}`;
+
+        // Put the cart text into the hidden input so Web3Forms emails it to you
+        orderDetailsInput.value = orderTextForEmail;
+
+        // Handle the checkout form submission
+        checkoutForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            let isValid = true;
+
+            const showError = (input, message) => {
+                const errorSpan = input.nextElementSibling;
+                errorSpan.textContent = message;
+                errorSpan.style.display = 'block';
+                input.style.borderBottomColor = '#E74C3C';
+                isValid = false;
+            };
+
+            const clearError = (input) => {
+                const errorSpan = input.nextElementSibling;
+                errorSpan.style.display = 'none';
+                input.style.borderBottomColor = '#E5E5E5';
+            };
+
+            const name = document.getElementById('checkoutName');
+            const phone = document.getElementById('checkoutPhone');
+            const email = document.getElementById('checkoutEmail');
+            const address = document.getElementById('checkoutAddress');
+
+            if (name.value.trim() === '') showError(name, 'Please enter your name');
+            else clearError(name);
+
+            const phoneRegex = /^[0-9+\s()-]{10,15}$/;
+            if (!phoneRegex.test(phone.value.trim())) showError(phone, 'Please enter a valid phone number');
+            else clearError(phone);
+
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email.value.trim())) showError(email, 'Please enter a valid email address');
+            else clearError(email);
+
+            if (address.value.trim() === '') showError(address, 'Please enter your address');
+            else clearError(address);
+
+            if (isValid) {
+                const submitBtn = checkoutForm.querySelector('button[type="submit"]');
+                submitBtn.textContent = 'Processing Order...';
+                submitBtn.disabled = true;
+
+                const formData = new FormData(checkoutForm);
+
+                fetch('https://api.web3forms.com/submit', {
+                    method: 'POST',
+                    body: formData
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        // Clear the cart and hide the form
+                        localStorage.removeItem('sowetoCart');
+                        checkoutForm.style.display = 'none';
+                        
+                        const successMsg = document.getElementById('checkoutSuccess');
+                        successMsg.style.display = 'block';
+                        window.scrollTo({ top: 0, behavior: 'smooth' });
+                    } else {
+                        alert("Something went wrong with your order. Please try again.");
+                        submitBtn.textContent = 'Pay & Place Order';
+                        submitBtn.disabled = false;
+                    }
+                })
+                .catch(error => {
+                    alert("Error sending order.");
+                    submitBtn.textContent = 'Pay & Place Order';
+                    submitBtn.disabled = false;
+                });
+            }
+        });
+    }
+
 });

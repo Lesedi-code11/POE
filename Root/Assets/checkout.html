@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Soweto City Electrical Wholesalers | Checkout</title>
+        <link rel="stylesheet" href="../CSS/Style.css">
+    </head>
+    <body>
+
+        <header>
+            <div class="header-container">
+                <!--Company Logo-->
+                <div class="logo-block">
+                    <img src="../Images/Company logo.jpg" class="logo-img">
+                </div>
+
+                <!--Navigation Menu-->
+                <nav>
+                    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                    <label for="menu-toggle" class="menu-button">☰</label>
+                    <div class="nav-links">
+                        <a href="../index.html">Home</a>
+                        <a href="about.html">About</a>
+                        <a href="products.html">Products</a>
+                        <a href="enquiry.html">Enquiry</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section class="hero-section" style="padding-bottom: 50px;">
+                <p class="section-label">Checkout</p>
+                <h2>Complete your order.</h2>
+                <p>Review your cart and provide your details below to finalize your purchase.</p>
+            </section>
+
+            <section class="content-section-light">
+                <div class="content-wrapper">
+                    
+                    <!-- Checkout Form -->
+                    <form id="checkoutForm" action="https://api.web3forms.com/submit" method="POST" class="enquiry-form" novalidate>
+                        
+                        <!-- Web3Forms Access Key -->
+                        <input type="hidden" name="access_key" value="57e7f9e3-11bd-44c5-8cf9-b59f74380bce">
+                        <input type="hidden" name="subject" value="NEW ORDER - Soweto City Electrical">
+                        <input type="hidden" id="orderDetailsInput" name="order_details" value="">
+
+                        <h3 style="margin-bottom: 30px;">1. Order Summary</h3>
+                        <ul id="checkoutCartItems" style="list-style-type: none; padding: 0; margin-bottom: 30px; background: #FFF; padding: 20px; border-radius: 8px; border: 1px solid #E5E5E5;">
+                            <!--JS will inject cart items here-->
+                        </ul>
+                        <h4 id="checkoutTotal" style="font-size: 1.5rem; margin-bottom: 40px; color: #FF6B00;">Total: R0</h4>
+
+                        <h3 style="margin-bottom: 30px;">2. Shipping Details</h3>
+
+                        <!--Full Name-->
+                        <div class="form-group">
+                            <label for="checkoutName">Full Name</label>
+                            <input type="text" id="checkoutName" name="Customer_Name" placeholder="Enter your full name" required>
+                            <span class="error-msg" style="color: #E74C3C; font-size: 13px; display: none;"></span>
+                        </div>
+
+                        <!--Phone Number-->
+                        <div class="form-group">
+                            <label for="checkoutPhone">Phone Number</label>
+                            <input type="tel" id="checkoutPhone" name="Phone_Number" placeholder="Enter your contact number" required>
+                            <span class="error-msg" style="color: #E74C3C; font-size: 13px; display: none;"></span>
+                        </div>
+
+                        <!--Email Address-->
+                        <div class="form-group">
+                            <label for="checkoutEmail">Email Address</label>
+                            <input type="email" id="checkoutEmail" name="Email_Address" placeholder="Enter your email address" required>
+                            <span class="error-msg" style="color: #E74C3C; font-size: 13px; display: none;"></span>
+                        </div>
+
+                        <!--Delivery Address-->
+                        <div class="form-group">
+                            <label for="checkoutAddress">Delivery Address</label>
+                            <textarea id="checkoutAddress" name="Delivery_Address" rows="3" placeholder="Enter your full delivery address" required></textarea>
+                            <span class="error-msg" style="color: #E74C3C; font-size: 13px; display: none;"></span>
+                        </div>
+
+                        <!--Submit-->
+                        <div>
+                            <button type="submit" class="buy-button" style="width: 100%; font-size: 1.1rem;">Pay and Place Order</button>
+                        </div>
+
+                        <!--AJAX Success Message Container-->
+                        <div id="checkoutSuccess" style="display: none; margin-top: 20px; padding: 20px; background: #d4edda; color: #155724; border-radius: 4px; text-align: center;">
+                            <h4 style="color: #155724; margin-bottom: 10px;">Order Placed Successfully!</h4>
+                            <p>Thank you for your order. We will contact you shortly with an invoice and delivery details.</p>
+                            <a href="products.html" class="buy-button" style="margin-top: 15px; display: inline-block;">Back to Shop</a>
+                        </div>
+
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!--Footer-->
+        <footer>
+            <div class="footer-container">
+                <div class="footer-columns">
+                    <!--Company Information-->
+                    <div class="footer-col">
+                        <h4>Soweto City Electrical Wholesalers</h4>
+                        <p>Premier provider of electrical solutions, serving businesses, municipalities and communities across Gauteng and beyond.</p>
+                        <p class="footer-reg">Reg No: 2006/035889/23</p>
+                    </div>
+                    <!--Quick Links-->
+                    <div class="footer-col-links">
+                        <h4>Navigation</h4>
+                        <p><a href="../index.html">Home</a></p>
+                        <p><a href="about.html">About Us</a></p>
+                        <p><a href="products.html">Products</a></p>
+                        <p><a href="enquiry.html">Enquiry</a></p>
+                        <p><a href="contact.html">Contact</a></p>
+                    </div>
+                    <!--Contact Information-->
+                    <div class="footer-col-contact">
+                        <h4>Contact Details</h4>
+                        <p>
+                            <span class="footer-contact-label">Dobsonville:</span><br>
+                            Shop No. 54, Elias Motsoaledi Rd<br>
+                            Mmesi Park, Soweto, 1863
+                        </p>
+                        <p><a href="tel:+27119880102">+27 (0) 11 988 0102</a></p>
+                    </div>
+                    <!--Logo-->
+                    <div class="footer-col-logo">
+                        <img src="../Images/Company logo.jpg" class="footer-logo">
+                    </div>
+                </div>
+                <!--Copyright-->
+                <div class="footer-bottom">
+                    <p>&copy; 2026 Soweto City Electrical Wholesalers. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+        <script src="../Javascript/JS.js"></script>
+    </body>
+</html>
