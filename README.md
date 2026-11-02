@@ -43,7 +43,8 @@ Website Project Proposal document in Word/PDF format.
 README.md with comprehensive documentation.
 Content research and sourcing.
 
-<img width="659" height="564" alt="Sitemap" src="https://github.com/user-attachments/assets/9fc9f590-d60c-4aee-82b9-16b52177d68b" />
+<img width="707" height="652" alt="5" src="https://github.com/user-attachments/assets/b117a525-220f-462b-b761-0f739e2041cb" />
+
 
 
 # Changelog
@@ -76,6 +77,8 @@ Added HTML comments throughout the code to describe each section.
 
 Committed the initial project files to the GitHub repository.
 
+
+
 For Version/Part 2
 September 2026
 Created an external stylesheet named Style.css inside the CSS folder.
@@ -103,6 +106,8 @@ Styled the footer with a four-column layout: company information, navigation lin
 Added responsive media queries at 992px, 768px, and 480px to adjust font sizes, section padding, image sizes and layout for tablet and mobile.
 
 Tested the layout on desktop, tablet and mobile screen widths using browser developer tools.
+
+
 
 For Version/Part 3
 October 2026
