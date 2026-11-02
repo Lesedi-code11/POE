@@ -1,9 +1,15 @@
 document.addEventListener('DOMContentLoaded', function() {
 
-    /*1. SHOPPING CART LOGIC*/
+    /*1. SHOPPING CART & MODAL LOGIC*/
     const cartItemsContainer = document.getElementById('cartItems');
     const addToCartButtons = document.querySelectorAll('.add-to-cart');
     const clearCartBtn = document.getElementById('clearCartBtn');
+    
+    // Modal Variables
+    const cartModal = document.getElementById('cartModal');
+    const closeCartModal = document.getElementById('closeCartModal');
+    const continueShoppingBtn = document.getElementById('continueShoppingBtn');
+    const modalProductName = document.getElementById('modalProductName');
 
     // Load cart from LocalStorage (or start empty)
     let cart = JSON.parse(localStorage.getItem('sowetoCart')) || [];
@@ -65,8 +71,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Update UI
                 displayCart();
                 
-                // Small alert for feedback
-                alert(productName + ' has been added to your quote cart!');
+                // Show Modal instead of alert
+                if (cartModal) {
+                    modalProductName.textContent = productName;
+                    cartModal.style.display = 'flex';
+                }
             });
         });
     }
@@ -84,6 +93,23 @@ document.addEventListener('DOMContentLoaded', function() {
             cart = [];
             localStorage.setItem('sowetoCart', JSON.stringify(cart));
             displayCart();
+        });
+    }
+
+    // Close Modal Logic
+    if (cartModal) {
+        closeCartModal.addEventListener('click', function() {
+            cartModal.style.display = 'none';
+        });
+
+        continueShoppingBtn.addEventListener('click', function() {
+            cartModal.style.display = 'none';
+        });
+
+        window.addEventListener('click', function(e) {
+            if (e.target === cartModal) {
+                cartModal.style.display = 'none';
+            }
         });
     }
 
@@ -123,6 +149,20 @@ document.addEventListener('DOMContentLoaded', function() {
     const enquiryForm = document.getElementById('enquiryForm');
     
     if (enquiryForm) {
+        // AUTO-FILL MESSAGE IF CART HAS ITEMS
+        let currentCart = JSON.parse(localStorage.getItem('sowetoCart')) || [];
+        if (currentCart.length > 0) {
+            const messageBox = document.getElementById('message');
+            let cartText = "Hello, I would like a quote for the following items from my cart:\n\n";
+            
+            currentCart.forEach(item => {
+                cartText += `- ${item.name} (R${item.price})\n`;
+            });
+            
+            cartText += "\nPlease let me know the total price and availability.";
+            messageBox.value = cartText;
+        }
+
         enquiryForm.addEventListener('submit', function(e) {
             e.preventDefault(); 
             let isValid = true;
