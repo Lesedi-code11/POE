@@ -104,6 +104,28 @@ Added responsive media queries at 992px, 768px, and 480px to adjust font sizes, 
 
 Tested the layout on desktop, tablet and mobile screen widths using browser developer tools.
 
+For Version/Part 3
+October 2026
+
+JavaScript and Interactive Elements
+- Implemented a dynamic Shopping Cart using "localStorage" to hold items across pages.
+- Added a custom Modal popup for "Add to Cart" notifications.
+- Implemented a Product Filter using JavaScript to filter by category (Plumbing, Electrical, Heating).
+- Added a Lightbox feature to view product images in full screen.
+- Integrated a Google Form on the About page for customer feedback.
+
+Form Validation and AJAX
+- Added custom client-side validation to the Enquiry and Contact forms (checking for empty fields, valid phone numbers, and email formats).
+- Implemented AJAX submission on the Enquiry form using the Web3Forms API, preventing page reloads and showing a success message.
+- Formatted the Contact form to compile data into an email client ("mailto:").
+
+Search Engine Optimization (SEO)
+- Added Meta Titles and Descriptions to all HTML pages.
+- Created a "robots.txt" file to instruct search engine crawlers.
+- Created a "sitemap.xml" file to help search engines index all pages.
+- Optimized images with responsive "srcset" and descriptive "alt" text.
+- Deployed the website to Netlify for HTTPS security and fast page speeds.
+
 # References
 Afrihost, 2026. Business hosting plans. [online] Available at: https://www.afrihost.com/ [Accessed 8 August 2026].
 
@@ -113,11 +135,17 @@ Domain.co.za, 2026. Domain registration pricing. [online] Available at: https://
 
 Google Analytics, 2026. Google Analytics. [online] Available at: https://analytics.google.com/ [Accessed 8 August 2026].
 
+Google Search Central. 2026. Search Engine Optimization (SEO) Starter Guide. [Online]. Available at: https://developers.google.com/search/docs/fundamentals/seo-starter-guide [Accessed 25 October 2026].
+
 Indeed, 2026. Web developer salary in South Africa. [online] Available at: https://za.indeed.com/career/web-developer/salaries [Accessed 11 August 2026].
 
 Microsoft. 2026. Visual Studio Code. [Online]. Available at: https://code.visualstudio.com/ [Accessed 15 September 2026].
 
 Mozilla Developer Network. 2026. CSS: Cascading Style Sheets. [Online]. Available at: https://developer.mozilla.org/en-US/docs/Web/CSS [Accessed 15 September 2026].
+
+Mozilla Developer Network. 2026. JavaScript Guide. [Online]. Available at: https://developer.mozilla.org/en-US/docs/Web/JavaScript [Accessed 24 October 2026].
+
+Netlify. 2026. Netlify Documentation. [Online]. Available at: https://docs.netlify.com/ [Accessed 2 November 2026].
 
 PayFast, 2026. Payment gateway pricing. [online] Available at: https://www.payfast.co.za/ [Accessed 12 August 2026].
 
@@ -136,5 +164,7 @@ W3Schools. 2026. CSS Media Queries. [Online]. Available at: https://www.w3school
 W3Schools, 2026. HTML tutorial. [online] Available at: https://www.w3schools.com/html/ [Accessed 9 August 2026].
 
 W3Schools, 2026. JavaScript tutorial. [online] Available at: https://www.w3schools.com/js/ [Accessed 10 August 2026].
+
+W3Schools. 2026. JavaScript Tutorial. [Online]. Available at: https://www.w3schools.com/js/ [Accessed 20 October 2026].
 
 Xneelo, 2026. Web hosting plans. [online] Available at: https://www.xneelo.co.za/ [Accessed 8 August 2026].
