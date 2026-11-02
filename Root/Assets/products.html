@@ -62,7 +62,7 @@
                         <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 20px; border-top: 1px solid #E5E5E5; padding-top: 20px;">
                             <button id="clearCartBtn" style="background: transparent; border: 1px solid #E74C3C; color: #E74C3C; padding: 10px 15px; border-radius: 4px; cursor: pointer; font-weight: 600; font-size: 14px;">Clear Cart</button>
                             
-                            <!--Goes straight to checkout.html and has no buy-button class to trigger the modal-->
+                            <!-- FIXED: Goes straight to checkout.html and has no buy-button class to trigger the modal -->
                             <a href="checkout.html" style="background: #FF6B00; color: #FFFFFF; padding: 12px 30px; text-decoration: none; border-radius: 4px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; font-size: 0.9375rem; box-shadow: 0 4px 12px rgba(255, 107, 0, 0.3);">Checkout &rarr;</a>
                         </div>
                     </div>
@@ -79,7 +79,7 @@
                     <div class="item-row" data-category="Plumbing">
                         <div class="flex-row">
                             <div class="flex-half">
-                                <img src="../Images/Bath mixer tap.png"
+                                <img src="../Images/Bath mixer tap.png" class="product-img" style="cursor: pointer;"
                                     srcset="../Images/Bath mixer tap.png 1x, ../Images/Bath mixer tap mobile.png 2x"
                                     sizes="(max-width: 768px) 100vw, 400px"
                                     alt="Mixer Tap">
@@ -98,7 +98,7 @@
                     <div class="item-row" data-category="Electrical">
                         <div class="flex-row">
                             <div class="flex-half">
-                                <img src="../Images/Circuit Breaker.jpg">
+                                <img src="../Images/Circuit Breaker.jpg" class="product-img" style="cursor: pointer;" alt="Circuit Breaker">
                             </div>
                             <div class="flex-two-thirds">
                                 <h3>Circuit Breaker</h3>
@@ -114,7 +114,7 @@
                     <div class="item-row" data-category="Electrical">
                         <div class="flex-row">
                             <div class="flex-half">
-                                <img src="../Images/Electrical cable.jpg">
+                                <img src="../Images/Electrical cable.jpg" class="product-img" style="cursor: pointer;" alt="Electrical Wire">
                             </div>
                             <div class="flex-two-thirds">
                                 <h3>Electrical Wire</h3>
@@ -130,7 +130,7 @@
                     <div class="item-row" data-category="Heating">
                         <div class="flex-row">
                             <div class="flex-half">
-                                <img src="../Images/Geyser themostat.jpg">
+                                <img src="../Images/Geyser themostat.jpg" class="product-img" style="cursor: pointer;" alt="Geyser Thermostat">
                             </div>
                             <div class="flex-two-thirds">
                                 <h3>Geyser Thermostat</h3>
@@ -146,7 +146,7 @@
                     <div class="item-row" data-category="Heating">
                         <div class="flex-row">
                             <div class="flex-half">
-                                <img src="../Images/Glass heater bar.png">
+                                <img src="../Images/Glass heater bar.png" class="product-img" style="cursor: pointer;" alt="Glass Heater Bar">
                             </div>
                             <div class="flex-two-thirds">
                                 <h3>Glass Heater Bar</h3>
@@ -162,7 +162,7 @@
                     <div class="item-row" data-category="Electrical">
                         <div class="flex-row">
                             <div class="flex-half">
-                                <img src="../Images/Light bulbs.jpg">
+                                <img src="../Images/Light bulbs.jpg" class="product-img" style="cursor: pointer;" alt="Light Bulbs">
                             </div>
                             <div class="flex-two-thirds">
                                 <h3>Light Bulbs</h3>
@@ -178,7 +178,7 @@
                     <div class="item-row" data-category="Heating">
                         <div class="flex-row">
                             <div class="flex-half">
-                                <img src="../Images/Oven Element.png">
+                                <img src="../Images/Oven Element.png" class="product-img" style="cursor: pointer;" alt="Oven Element">
                             </div>
                             <div class="flex-two-thirds">
                                 <h3>Oven Element</h3>
@@ -194,7 +194,7 @@
                     <div class="item-row" data-category="Plumbing">
                         <div class="flex-row">
                             <div class="flex-half">
-                                <img src="../Images/Plastic tap.jpg">
+                                <img src="../Images/Plastic tap.jpg" class="product-img" style="cursor: pointer;" alt="Plastic Tap">
                             </div>
                             <div class="flex-two-thirds">
                                 <h3>Plastic Tap</h3>
@@ -210,7 +210,7 @@
                     <div class="item-row item-row-last" data-category="Electrical">
                         <div class="flex-row">
                             <div class="flex-half">
-                                <img src="../Images/Socket.jpg">
+                                <img src="../Images/Socket.jpg" class="product-img" style="cursor: pointer;" alt="Socket">
                             </div>
                             <div class="flex-two-thirds">
                                 <h3>Socket</h3>
@@ -294,7 +294,7 @@
             </div>
         </footer>
 
-        <!-- Add to Cart Modal -->
+        <!--Add to Cart Modal-->
         <div id="cartModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 25, 47, 0.8); z-index: 9999; justify-content: center; align-items: center;">
             <div style="background: #FFFFFF; padding: 40px; border-radius: 8px; max-width: 400px; width: 90%; position: relative; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
                 
@@ -315,6 +315,12 @@
                     <a href="checkout.html" class="buy-button" style="margin-top: 0; text-decoration: none; display: block;">Go to Checkout</a>
                 </div>
             </div>
+        </div>
+
+        <!--Lightbox Container-->
+        <div id="lightbox" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 25, 47, 0.9); z-index: 10000; justify-content: center; align-items: center; cursor: zoom-out;">
+            <span id="closeLightbox" style="position: absolute; top: 20px; right: 30px; font-size: 40px; color: #FFF; cursor: pointer; font-weight: bold;">&times;</span>
+            <img id="lightboxImg" src="" alt="Enlarged Product" style="max-width: 90%; max-height: 90%; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
         </div>
 
         <script src="../Javascript/JS.js"></script>

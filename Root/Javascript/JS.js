@@ -404,4 +404,31 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+        /*6. LIGHTBOX LOGIC*/
+    const productImages = document.querySelectorAll('.product-img');
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightboxImg');
+    const closeLightbox = document.getElementById('closeLightbox');
+
+    if (productImages.length > 0 && lightbox) {
+        productImages.forEach(img => {
+            img.addEventListener('click', function() {
+                lightboxImg.src = this.src; // Get the clicked image source
+                lightbox.style.display = 'flex'; // Show the lightbox
+            });
+        });
+
+        // Close lightbox when clicking the X
+        closeLightbox.addEventListener('click', function() {
+            lightbox.style.display = 'none';
+        });
+
+        // Close lightbox when clicking anywhere on the dark background
+        lightbox.addEventListener('click', function(e) {
+            if (e.target !== lightboxImg) {
+                lightbox.style.display = 'none';
+            }
+        });
+    }
+
 });
