@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
 
-    /*1. SHOPPING CART & MODAL LOGIC*/
+    /*1. SHOPPING CART and MODAL LOGIC*/
     const cartItemsContainer = document.getElementById('cartItems');
     const addToCartButtons = document.querySelectorAll('.add-to-cart');
     const clearCartBtn = document.getElementById('clearCartBtn');
@@ -145,7 +145,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    /*3. ENQUIRY FORM VALIDATION & AJAX SUBMISSION*/
+    /*3. ENQUIRY FORM VALIDATION and AJAX SUBMISSION*/
     const enquiryForm = document.getElementById('enquiryForm');
     
     if (enquiryForm) {

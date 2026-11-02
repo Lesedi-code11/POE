@@ -1,0 +1,27 @@
+<?xml versions="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>https://sowto-city-electrical.netify.app/index.html</loc>
+<priority>1.00</priority>
+</url>
+<url>
+<loc>https://sowto-city-electrical.netify.app/Assets/about.html</loc>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://sowto-city-electrical.netify.app/Assets/products.html</loc>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://sowto-city-electrical.netify.app/Assets/enquiry.html</loc>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://sowto-city-electrical.netify.app/Assets/contact.html</loc>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://sowto-city-electrical.netify.app/Assets/checkout.html</loc>
+<priority>0.80</priority>
+</url>
+</urlset>
